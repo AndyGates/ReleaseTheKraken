@@ -1,13 +1,13 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\DamageCollision.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\BoatSpawner.cs">
     <Files>
-      <File FileName="Assets\Scripts\KrakenDeath.cs" Line="24" Column="1" />
+      <File FileName="Assets\Scripts\GameState.cs" Line="57" Column="27" />
+      <File FileName="Assets\Scripts\FadeAway.cs" Line="27" Column="108" />
+      <File FileName="Assets\Scripts\Boat.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Crosshair.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\ScreenFade.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\DamageCollision.cs" Line="41" Column="3" />
-      <File FileName="Assets\Scripts\GameState.cs" Line="60" Column="3" />
-      <File FileName="Assets\Scripts\Tentacle.cs" Line="47" Column="57" />
-      <File FileName="Assets\Scripts\Boat.cs" Line="37" Column="1" />
+      <File FileName="Assets\Scripts\BoatSpawner.cs" Line="30" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

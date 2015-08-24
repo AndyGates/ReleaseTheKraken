@@ -25,23 +25,24 @@ public class BoatSpawner : MonoBehaviour {
 	void Start () 
 	{
 		m_source = GetComponent<AudioSource>();
-		m_lastSpawnTime = Time.time;
+		m_lastSpawnTime = GameState.instance.GameTime;
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
-		if((Time.time > m_startDelay) && (Time.time - m_lastSpawnTime > m_spawnDelay))
+		float gameTime = GameState.instance.GameTime;
+
+		if((gameTime > m_startDelay) && (gameTime - m_lastSpawnTime > m_spawnDelay))
 		{
 			Vector3 pos = transform.localPosition;
 			pos.y += Random.Range(-4.0f, 2.0f);
 
 			Instantiate(m_boat, pos, transform.localRotation);
-			m_lastSpawnTime = Time.time;
+			m_lastSpawnTime = gameTime;
 
 			if(Random.Range(0, m_soundChance) == 0)
 			{
-				Debug.Log("PLAYPLAT");
 				m_source.PlayOneShot(m_sounds[Random.Range(0, m_sounds.Count)]);
 			}
 		}

@@ -34,6 +34,8 @@ public class Boat : MonoBehaviour
 
 	protected virtual void OnTriggerEnter2D(Collider2D other) 
 	{	
+		if(other == null || other.attachedRigidbody == null || other.gameObject == null) return;
+
 		if(Mathf.Abs(other.attachedRigidbody.velocity.magnitude) > 6.0f || other.gameObject.layer == LayerMask.NameToLayer("Head"))
 		{
 			if(other.gameObject.layer == LayerMask.NameToLayer("Kraken")) GameState.instance.AddScore();

@@ -54,10 +54,12 @@ public class GameState : MonoBehaviour
 	{
 		get 
 		{
-			float timer = Time.time - m_startTime;
+			float timer = GameTime;
 			return string.Format("{0:00}:{1:00}", timer / 60, timer % 60);
 		}
 	}
+
+	public float GameTime {get { return Time.time - m_startTime; } }
 
 	private static GameState m_instance;
 	public static GameState instance
